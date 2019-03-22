@@ -9,41 +9,61 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
 	 crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam:300" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-    <nav role="navigation">
-        <!-- <div class="hamburger">&#9776;</div> -->
+    <nav role="navigation" class="nav-down">
         <ul class="siteLinks">
-            <!-- this links goes back to the top of the page -->
-            <li class="myInitials"><a href="#">YA</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main role="main">
         <header role="banner">
-            <h1>Hi. I'm Yulia.</h1>
+            <img class="profilePic" src="profile.jpg" alt="white female with short dark hair, smiling at the camera. She is wearing a striped yellow and gray sweater and white cateye sunglasses.">
+            <h1>Hi. I'm <span class="myName">Yulia</span>.</h1>
             <h2>I’m an aspiring full-stack developer and web accessibility specialist.
             </h2>
         </header>
 
-        <section class="aboutMe">
+        <section id="about" class="aboutMe">
+            <h2>I am ...</h2>
             <p>
-                I’m a curious web development student at Thinkful. I love to find simple and efficient solutions to complex problems, both in tech and in life. I strive to make all my projects accessible to a wide variety of users and am constantly learning the best ways to do that. I’m also an artist and co-direct an experimental dance theatre company in Portland, OR. As I grow, learn, and change in my coding journey, so will this bio and portfolio. I’m excited to learn more technologies and combine all my different passions and values: art, social justice, accessibility, and technology. 
+                a curious web development student at Thinkful. I love to find simple and efficient solutions to complex problems, both in tech and in life. I strive to make all my projects accessible to a wide variety of users and am constantly learning the best ways to do that. I’m also an artist and co-direct an experimental dance theatre company in Portland, OR. As I grow, learn, and change in my coding journey, so will this bio and portfolio. I’m excited to learn more technologies and combine all my different passions and values: art, social justice, accessibility, and technology. 
             </p>
         </section>
 
-        <section class="myProjects">
-            My Projects
+        <section id="projects" class="myProjects">
+            <h2>Projects</h2>
+            
+            <figure>
+                <h3 class="projectName">Star Trek Quiz</h3>
+                <img src="starTrekPhoto.JPG" alt="">
+                <figcaption>A 10 question quiz designed to test your knowledge of all the different Star Trek series. A fun interactive web app. HTML/CSS,Javascript, jQuery</figcaption>
+                <p class="links">
+                    <a href="https://github.com/Yulia-Ara/StarTrekQuizApp" class="gitLiveLinks">GitHub</a> | <a href="https://yulia-ara.github.io/StarTrekQuizApp/" class="gitLiveLinks">Live</a>
+                </p>
+            </figure>  
         </section>
 
-        <section class="contactMe">
-            Contact Me
+        <section id="contact" class="contactMe">
+            <h2>Contact</h2>
+            <h3>
+                I'd love to hear from you!
+            </h3>
+            <p class="contact">
+                Email: <a class="myEmail" href="mailto:yulia.arakelyan@gmail.com">yulia.arakelyan@gmail.com</a>
+            </p>
+            <p class="contact">
+                Find me on <a class="myGitHub" href="https://github.com/Yulia-Ara">GitHub</a>
+            </p>
         </section>
     </main>
-
-    <footer role="contentinfo">Copyright Yulia Arakelyan 2019</footer>
+    <script src="main.js"></script>
+    <!-- <footer role="contentinfo">Copyright Yulia Arakelyan 2019</footer> -->
 </body>
 </html>
